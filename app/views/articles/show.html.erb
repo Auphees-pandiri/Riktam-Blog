@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+
+<div class="container">
+      <div class="panel panel-default">
+        <div class="panel-heading text-center">
+          <h2>
+  			<strong>Title:</strong>
+ 			 <%= @article.title %>
+		  </h2>
+        </div>
+        <div class="panel-body">
+        	<h3><strong>Description:</strong></h3>
+        	<p><%= @article.description %></p>
+        </div>
+        <div class="panel-footer">
+ 			<%= link_to 'Edit this Article', edit_article_path(@article), class:'btn btn-primary' %> 
+ 			<%= link_to 'Delete this Article', article_path(@article),method: :delete, data: { confirm: 'Are you sure?' }, class:'btn btn-danger' %>
+			<%= link_to 'View All Articles', articles_path,class:'btn btn-success ' %>
+          
+        </div>
+      </div>
+</div>
