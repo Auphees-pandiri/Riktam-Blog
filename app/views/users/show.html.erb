@@ -20,4 +20,10 @@
 	<h2 class="text-center"><%= @user.username%>'s Articles:</h2>
 </div>
 
-<%= render 'articles/article', obj: @user.articles %>
+<div align="center">
+	<%= will_paginate @user_articles %>
+</div>
+<%= render 'articles/article', obj: @user_articles %>
+<div align="center">
+	<%= will_paginate @user_articles %>
+</div>
