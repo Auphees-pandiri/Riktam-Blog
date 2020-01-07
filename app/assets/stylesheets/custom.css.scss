@@ -28,7 +28,7 @@ footer{
 
 .panel {
     border: 1px solid #1d678a; 
-    border-radius:0 !important;
+    border-radius:10px !important;
     transition: box-shadow 0.5s;
   }
   .panel:hover {
@@ -82,4 +82,16 @@ footer{
   }
   .article-meta-details {
 	margin-top: 15px;
+}
+.listing {
+  list-style: none;
+  padding-left: 0;
+}
+.well {
+    border: 1px solid #1d678a; 
+    border-radius:8px !important;
+    transition: box-shadow 0.5s;
+}
+.well:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
 }
