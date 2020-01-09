@@ -27,9 +27,11 @@
                 </ul>
             <% end %>
           </div>
-
         	<h3><strong>Description:</strong></h3>
         	<p><%= @article.description %></p>
+          <% if @article.categories.any? %>
+            <p><h4 class="cat">Categories:</h4> <%= render @article.categories %></p>
+          <% end %>
         </div>
         <div class="panel-footer">
           <% if logged_in? && (current_user == @article.user || current_user.admin?) %>

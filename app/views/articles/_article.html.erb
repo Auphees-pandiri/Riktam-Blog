@@ -16,6 +16,9 @@
               <%= time_ago_in_words(article.created_at) %> ago,
               last updated: <%= time_ago_in_words(article.updated_at) %> ago</kbd>
           </div>
+          <% if article.categories.any? %>
+            <p><h4 class="cat">Categories:</h4><%= render article.categories %></p>
+          <% end %>
           <% if logged_in? && (current_user == article.user || current_user.admin?) %>
             <%= link_to 'Edit this Article', edit_article_path(article), class:'btn' %> 
             <%= link_to 'Delete this Article', article_path(article),method: :delete, data: { confirm: 'Are you sure?' }, class:'btn' %>

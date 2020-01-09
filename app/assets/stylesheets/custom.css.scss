@@ -83,6 +83,7 @@ footer{
   }
   .article-meta-details {
 	margin-top: 15px;
+  margin-bottom:10px;
 }
 .listing {
   list-style: none;
@@ -95,4 +96,21 @@ footer{
 }
 .well:hover {
     box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+}
+.badge {
+  background-color: #96ed93;
+  padding:5px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+
+}
+
+.input_checkbox input {
+  width: auto !important;
+}
+kbd{
+  background-color:#111d40;
+}
+.cat{
+  font-weight: bold;
 }
